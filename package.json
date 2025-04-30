@@ -1,6 +1,6 @@
 {
   "name": "mbcj-cliente-firma",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "description": "Uso de firma",
   "scripts": {

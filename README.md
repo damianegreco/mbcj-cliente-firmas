@@ -56,49 +56,46 @@ firma.comparar(docEjemplo)
 
 ### Obtener firmas (resumen) de un documento
 ```javascript
-const docEjemplo = fs.readFileSync(docOriginalPath);
+const docEjemplo = fs.readFileSync(docFirmadoPath);
 
-firma.comparar(docEjemplo)
+firma.getFirmas(docEjemplo)
 .then((datos_firmas) => {
-    console.log(datos_firmas);
-    resolve();
+  console.log(datos_firmas);
+  resolve()
 })
 .catch((error) => {
-    if (error.response.status !== 422)
-    console.error(error);
-    process.exit(1);
+  console.error(error);
+  process.exit(1);
 })
 ```
 
 ### Obtener detalle de firmas de un documento
 ```javascript
-const docEjemplo = fs.readFileSync(docOriginalPath);
+const docEjemplo = fs.readFileSync(docFirmadoPath);
 
-firma.comparar(docEjemplo)
+firma.getFirmasDetalles(docEjemplo)
 .then((datos_firmas) => {
-    console.log(datos_firmas);
-    resolve();
+  console.log(datos_firmas);
+  resolve()
 })
 .catch((error) => {
-    if (error.response.status !== 422)
-    console.error(error);
-    process.exit(1);
+  console.error(error);
+  process.exit(1);
 })
 ```
 
 ### Obtener certificados de firmas del documetno
 ```javascript
-const docEjemplo = fs.readFileSync(docOriginalPath);
+const docEjemplo = fs.readFileSync(docFirmadoPath);
 
-firma.comparar(docEjemplo)
+firma.getCertificados(docEjemplo)
 .then((datos_firmas) => {
-    console.log(datos_firmas);
-    resolve();
+  console.log(datos_firmas);
+  resolve()
 })
 .catch((error) => {
-    if (error.response.status !== 422)
-    console.error(error);
-    process.exit(1);
+  console.error(error);
+  process.exit(1);
 })
 ```
 
