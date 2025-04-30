@@ -1,0 +1,21 @@
+{
+  "name": "mbcj-cliente-firma",
+  "version": "1.0.1",
+  "main": "index.js",
+  "description": "Uso de firma",
+  "scripts": {
+    "dev": "node ./test.js"
+  },
+  "keywords": [],
+  "author": "damianegreco",
+  "license": "ISC",
+  "type": "commonjs",
+  "peerDependencies": {
+    "axios": "^1.9.0",
+    "form-data": "^4.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "minimist": "^1.2.8"
+  }
+}
