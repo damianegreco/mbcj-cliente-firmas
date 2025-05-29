@@ -4,7 +4,9 @@
   "main": "index.js",
   "description": "Uso de firma",
   "scripts": {
-    "dev": "node ./test.js"
+    "dev": "node ./test.js",
+    "test": "jest ./test/",
+    "sign": "node ./scripts/encrypt.js"
   },
   "keywords": [],
   "author": "damianegreco",
@@ -15,7 +17,10 @@
     "form-data": "^4.0.2"
   },
   "devDependencies": {
+    "axios-mock-adapter": "^2.1.0",
     "dotenv": "^16.5.0",
-    "minimist": "^1.2.8"
+    "jest": "^29.7.0",
+    "minimist": "^1.2.8",
+    "supertest": "^7.1.1"
   }
 }
